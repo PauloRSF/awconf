@@ -1,0 +1,46 @@
+{
+  "name": "@awconf/core",
+  "version": "0.1.0",
+  "description": "Type-safe, validation-agnostic config loader with pluggable sources",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awconf/awconf.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/awconf/awconf#readme",
+  "bugs": "https://github.com/awconf/awconf/issues",
+  "keywords": [
+    "config",
+    "configuration",
+    "env",
+    "environment",
+    "dotenv",
+    "json",
+    "type-safe",
+    "validation"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  }
+}

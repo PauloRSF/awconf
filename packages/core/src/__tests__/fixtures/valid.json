@@ -1,0 +1,20 @@
+{
+  "this_is_text": "foo",
+  "this_is_a_number": 4242,
+  "value_with_spaces": "baz bar",
+  "array": [
+    "foo",
+    "bar",
+    "baz"
+  ],
+  "nested": {
+    "nested_text": "foo",
+    "nested_number": 4242,
+    "nested_value_with_spaces": "baz bar",
+    "even_more_nested": {
+      "even_more_nested_text": "foo",
+      "even_more_nested_number": 4242,
+      "even_more_nested_value_with_spaces": "baz bar"
+    }
+  }
+}

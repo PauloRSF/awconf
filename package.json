@@ -1,0 +1,22 @@
+{
+  "name": "awconf",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awconf/awconf.git"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "tsc --noEmit --project tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0",
+    "zod": "^3.25.76"
+  }
+}

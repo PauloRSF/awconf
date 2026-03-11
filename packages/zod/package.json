@@ -1,0 +1,44 @@
+{
+  "name": "@awconf/zod",
+  "version": "0.1.0",
+  "description": "Zod adapter for @awconf/core — validate config values with Zod schemas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awconf/awconf.git",
+    "directory": "packages/zod"
+  },
+  "homepage": "https://github.com/awconf/awconf#readme",
+  "bugs": "https://github.com/awconf/awconf/issues",
+  "keywords": [
+    "config",
+    "configuration",
+    "zod",
+    "validation",
+    "schema",
+    "type-safe",
+    "awconf"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "peerDependencies": {
+    "@awconf/core": "^0.1.0",
+    "zod": "^3.0.0"
+  }
+}

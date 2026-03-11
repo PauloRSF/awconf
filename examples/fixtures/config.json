@@ -1,0 +1,15 @@
+{
+  "app": {
+    "name": "my-app",
+    "version": "1.0.0"
+  },
+  "db": {
+    "host": "json-host",
+    "port": 5432,
+    "user": "json-user",
+    "pass": "json-pass"
+  },
+  "redis": {
+    "url": "redis://localhost:6379"
+  }
+}
